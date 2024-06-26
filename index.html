@@ -24,20 +24,20 @@
   <body class="main-bg">
     <aside class="menu white-bg">
       <div class="main-content menu-content">
-        <h1><a href="">Logo</a></h1>
+        <h1><a href="#home">Logo</a></h1>
         <nav>
           <ul>
-            <li><a href="">Intro</a></li>
-            <li><a href="">Top 3</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Work</a></li>
+            <li><a href="#intro">Intro</a></li>
+            <!-- <li><a href="#top3">Top 3</a></li> -->
+            <li><a href="#grid-one">Grid one</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="">Contact</a></li>
           </ul>
         </nav>
       </div>
     </aside>
     <div class="menu-spacing"></div>
-    <section class="intro main-bg section">
+    <section id="home" class="intro main-bg section">
       <div class="main-content intro-content">
         <div class="intro-text-content">
           <h2>January brings us Firefox 85</h2>
@@ -49,19 +49,77 @@
             support from Firefox.
           </p>
         </div>
-        <div class="intro-img"><img src="assets/img/javaScript.svg" alt="Logo de HTML, CSS e JavaScript"></div>
+        <div class="intro-img">
+          <img
+            src="assets/img/javaScript.svg"
+            alt="Logo de HTML, CSS e JavaScript"
+          />
+        </div>
       </div>
     </section>
-    <section class="white-bg section">
-      <div class="main-content">
-        <h1>Testing</h1>
+    <section id="intro" class="white-bg section">
+      <div class="main-content top3-content">
+        <h1>Top 3 Jobs</h1>
         <p>
-          To wrap up January, we are proud to bring you the release of Firefox
-          85. In this version we are bringing you support for the :focus-visible
-          pseudo-class in CSS and associated devtools, &lt;link
-          rel=&quot;preload&quot; /&gt;, and the complete removal of Flash
-          support from Firefox.
+          The :focus-visible pseudo-class, previously supported in Firefox via
+          the proprietary :-moz-focusring pseudo-class, allows the developer to
+          apply styling to elements in cases where browsers use heuristics to
+          determine that focus should be made evident on the element.
         </p>
+        <p>
+          The most obvious case is when you use the keyboard to focus an element
+          such as a button or link. There are often cases where designers will
+          want to get rid of the ugly focus-ring, commonly achieved using
+          something like :focus { outline: none }, but this causes problems for
+          keyboard users, for whom the focus-ring is an essential accessibility
+          aid.
+        </p>
+        <p>
+          Firefox 85 sees the complete removal of Flash support from the
+          browser, with no means to turn it back on. This is a coordinated
+          effort across browsers, and as our plugin roadmap shows, it has been
+          on the cards for a long time.
+        </p>
+      </div>
+    </section>
+    <section id="grid-one" class="grid-one main-bg section">
+      <div class="main-content grid-one-content">
+        <h2 class="grid-main-heading">My Grid</h2>
+        <p class="grid-description">One short description</p>
+        <div class="grid">
+          <article>
+            <h3>Test 1</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, praesentium maiores sunt necessitatibus officia
+              nostrum possimus dignissimos in omnis nihil quas animi ad aut
+              consectetur. Accusantium esse praesentium odio quam?
+            </p>
+          </article>
+          <article>
+            <h3>Test 2</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, praesentium maiores sunt necessitatibus officia
+              nostrum possimus dignissimos in omnis nihil quas animi ad aut
+              consectetur. Accusantium esse praesentium odio quam?
+            </p>
+          </article>
+          <article>
+            <h3>Test 3</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, praesentium maiores sunt necessitatibus officia
+              nostrum possimus dignissimos in omnis nihil quas animi ad aut
+              consectetur. Accusantium esse praesentium odio quam?
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="section white-bg">
+      <div class="main-content">
+        <h1>teste</h1>
       </div>
     </section>
   </body>
